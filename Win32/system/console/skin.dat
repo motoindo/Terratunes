@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<HEAD>
+	<TITLE>Camphuisen Media - Touchscreen Homebox</TITLE>
+		<style><*CONSOLE_STYLE*></style>		
+		<SCRIPT src="/include/prototype.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/constants.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/weblib.cls" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/dbcommand.cls" type="text/javascript"></SCRIPT>
+		<SCRIPT type="text/jscript">
+			function clsSettings(){
+				this.bGuest = <*IS_GUEST*>;
+				this.bOnWan = <*IS_WANUSER*>;
+				this.MyIP = "<*CLIENT_LAN_IP*>";
+				this.ServerLanIp = "<*SERVER_LAN_IP*>";
+				this.ServerWanIp = "<*SERVER_WAN_IP*>";
+				this.ServerLanPort = "<*SERVER_LAN_PORT*>";
+				this.ServerWanPort = "<*SERVER_WAN_PORT*>";
+				this.ServerMAC = "<*SERVER_MAC*>";
+				this.AppVersion = "<*APP_VERSION*>";
+				this.ServerRecSet = <*APP_PAGERECORDS*>;
+				this.ConsoleWidth = <*CONSOLE_WIDTH*>;
+				this.ConsoleHeight = <*CONSOLE_HEIGHT*>;
+				this.cmdXML = "<*SERVER_XML*>";
+			}
+			<*CONSOLE_SCRIPT*>
+		</SCRIPT>
+	</HEAD>
+	<BODY scroll="no" id="idBody" onload="fn_start()">
+		<input type="hidden" id="tellavision_talkback" action="0" value="0">   <!-- DO NOT MODIFY ID TO AVOID SCREWING UP TALKBACK FUNCTIONALITY-->
+		<div id="dvMenuHome"></div>
+		<div id="dvMenuSearch"></div>
+		<div id="dvMenuCoverflow">kofferflo</div>
+		
+	</BODY>
+</html>

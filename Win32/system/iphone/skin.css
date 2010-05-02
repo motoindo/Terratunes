@@ -1,0 +1,563 @@
+		#dvBody 														{
+																		-webkit-user-select:none;
+																		-webkit-touchcallout:none;
+																		margin:0px;
+																		font-family:Helvetica;
+																		color:#fff;
+																		background:#000 url(skinimg/iphone/startup_busy.jpg);
+																	}
+		body[class="portrait"]										{
+																		background-color:#000;
+																	}	
+		body[class="landscape"]										{
+																		background-color:#000;
+																	}		
+		#dvAppTitle													{
+																		-webkit-box-sizing: border-box;
+																		position:absolute;
+																		top:0px;
+																		height:20px;
+																		float:left;
+																		color:#0f0;
+																		font-size:9pt;
+																		line-height:20px;
+																		font-weight:bold;
+																		decoration:none;
+																	}	
+		body[class="portrait"] #dvAppTitle							{
+																		xpadding-left:182px;
+																		width:320px;
+																	}	
+		body[class="landscape"] #dvAppTitle							{
+																		xpadding-left:260px;
+																		width:480px;
+																	}		
+		#dvBodyContainerLandscape									{
+																		position:absolute;
+																		top:0px;
+																		left:0px;
+																		margin:0px;
+																		height:320px;
+																		width:480px;
+																		color:#000;
+																	}
+		#dvMainMessage												{
+																		padding-top:40px;text-align:center;
+																	}
+		#dvMainMenu													{
+																		position:absolute;
+																		bottom:0px;
+																		height:100px;
+																		width:480px;
+																		padding:0 100px 0 100px;
+																	}
+		#dvMainMenu > DIV											{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		margin:8px;
+																		width:80px;
+																		height:80px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		font-size:10pt;
+																		padding-top:14px;
+																		border:1px solid #000;
+																		background-color:#000;
+																		color:#eee;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																	}	
+	#dvBodyContainerPortrait										{			
+																		position:absolute;
+																		top:0px;
+																		left:0px;
+																		margin:0px;
+																		width:320px;
+																		height:480px;
+																	}
+	#dvBodyContainerPortrait > DIV									{
+																	}
+		#dvHeaderMenu												{
+																		position:absolute;
+																		width:320px;
+																		left:0px;
+																		top:20px;
+																		overflow:hidden;
+																		font-size:10px;
+																		text-align:center;
+																		font-weight:bold;
+																		margin:0px;
+																	}
+			#dvHeaderSwipeContainer									{
+																		position:relative;
+																		width:320px;
+																		overflow:hidden;
+																		margin-bottom:2px;
+																	}
+			#dvHeaderMenuSwipeDiv									{
+																		-webkit-transition-property: left;
+																		-webkit-transition-duration: 1s;
+																		position:relative;
+																		width:640px;
+																	} 
+			#dvHeaderMenuSwipeDiv > DIV								{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		line-height:10px;
+																		height:42px;
+																		width:78px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		margin:2px 0 2px 2px;
+																		display: block;
+																		font-size:10pt;
+																		padding-top:4px;
+																		background-color:#000;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																	}	
+			#dvHeaderMenuSwipeDiv > DIV.clsHeaderButtonSelected		{
+																		background-color:#00E;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.6)), to(rgba(255, 255, 255, 0)));
+																	}	
+			#dvHeaderSubMenu										{
+																		width:320px;
+																		font-size:10px;
+																		font-weight:bold;
+																		text-align:center;
+																		padding-left:4px;
+																	} 
+		#dvHeaderMenuContainerMediaPlayer							{
+																		-webkit-box-sizing: border-box;
+																		margin-top:2px;
+																		float:left;
+																		width:320px; 
+																		color:#fff;
+																		font-size:10px;
+																		font-weight:bold;
+																		background-color:#000;
+																	} 	
+		#dvHeaderMenuContainerMediaPlayer > DIV						{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 4px;
+																		margin:0 0 2px 2px;
+																		height:40px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		font-size:8pt;
+																	}	
+				#dvPlayerMask										{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		position:absolute;
+																		float:left;
+																		z-index:1;
+																		right:2px;
+																		width:118px;
+																		height:40px;
+																		top:96px;
+																		opacity:0.4;
+																		background-color:#00A;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0)));
+																	}
+				#btnPlayerStop,
+				#btnPlayerPlayPause									{
+																		padding-top:5px;
+																		width:58px;
+																		opacity:0.6;
+																		background-color:#00A;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0)));
+																	}
+				#dvVolumeContainer									{	
+																		width:196px;
+																																			}
+					#dvMaskLeft										{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		position:absolute;
+																		float:left;
+																		z-index:1;
+																		left:5px;
+																		width:76px;
+																		height:40px;
+																		top:96px;
+																		opacity:0.4;
+																		background-color:#0A0;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0)));
+																	}
+					#dvMaskCenter									{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		position:absolute;
+																		z-index:1;
+																		top:96px;
+																		left:82px;
+																		height:40px;
+																		width:37px;
+																		float:left;
+																		opacity:0.4;
+																		background-color:#f00;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0)));
+																	}
+					#dvMaskRight									{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		position:absolute;
+																		float:left;
+																		z-index:1;
+																		left:120px;
+																		width:78px;
+																		height:40px;
+																		top:96px;
+																		opacity:0.4;
+																		background-color:#0A0;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0)));
+																	}
+				#dvVolumeSlider										{
+																		-webkit-transition-property: left;
+																		-webkit-transition-duration: 2s;
+																		position:relative;
+																		float:left;
+																		width:4095px;
+																	} 
+				#dvVolumeSlider > DIV								{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		padding-top:12px;
+																		height:40px;
+																		width:37px;
+																		margin:0 0 0 2px;
+																		float:left;
+																		text-align:center;
+																		opacity: 0.5;
+																		color:#fff;
+																		background-color:#444;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		xbackground-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(128, 128,128, 0.1)), to(rgba(128, 128, 128, 0.7)));
+																	}		
+			#dvMessageContainer										{	
+																		margin:0 0 2px 0;
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		-webkit-user-select:none;
+																		-webkit-touchcallout:none;																		
+																		border:2px solid #666;
+																		background-color:#333;
+																		width:320px;
+																		height:44px;
+																	}
+			#dvMessageContainer	> #dvMenuButton_4					{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 4px;
+																		margin:2px 0 2px 2px;
+																		width:50px;
+																		height:36px;
+																		float:left;
+																		text-align:center;
+																		padding-top:32px;
+																		color:#0f0;
+																		writing-mode: tb-rl;
+																		filter: flipV flipH;
+																	}	
+				.clsPlaylist										{background:#444 url(skinimg/iphone/BarPlaylists_Sel.png) no-repeat 5px 2px;}  
+				.clsArtists											{background:#444 url(skinimg/iphone/BarArtists_Sel.png) no-repeat 1px 2px;} 
+				.clsAlbums											{background:#444 url(skinimg/iphone/BarAlbums_Sel.png) no-repeat 8px 5px;}
+				.clsSongs											{background:#444 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 14px 5px;} 
+				.clsFamily											{background:#444 url(skinimg/iphone/iphone-mode-server.gif) no-repeat 5px 2px;}
+			#dvMessage												{	
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 4px;
+																		float:left;
+																		margin:2px 0 2px 2px;
+																		width: 260px;
+																		height:36px;
+																		line-height:12px;
+																		text-align:left;
+																		font-size:8pt;
+																		font-weight:normal;
+																		color:#0F0;
+																		text-overflow:ellipsis;
+																		text-transform: uppercase;
+																		background-color:#444;
+																		padding:2px;
+																		
+																		
+																	}
+			#inpText												{
+																		x-webkit-box-sizing: border-box;
+																		x-webkit-border-radius: 6px;
+																		padding:0 0 0 4px;
+																		float:left;
+																		margin:2px 0 2px 2px;
+																		background-color:#777;
+																		border:0;
+																		height:36px;
+																		xline-height:10px;
+																		font-size:20pt;
+																		color:#eee;
+																		
+																	}			
+				.width_00											{width:312px;}
+				.width_11											{width:208px;}
+				.width_10											{width:260px;}
+				.width_01											{width:260px;}
+			#dvMessageContainer	> #cdvMenuButton_6					{
+																		height:40px;
+																		width:20px;
+																		float:left;
+																		background:#777 url(skinimg/iphone/closebox.png) no-repeat 4px right ;
+																	}	
+			#dvMessageContainer	> #dvMenuButton_7					{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		line-height:10px;
+																		height:36px;
+																		width:50px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		margin:2px 0 2px 2px;
+																		display: block;
+																		font-size:10pt;
+																		padding-top:11px;
+																		background-color:#F00;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.9)), to(rgba(255, 255, 255, 0.1)));
+																	}	
+			#dvFilter												{
+																		background-color:#000;
+																		float:left;
+																		xwidth:320px;
+																		xheight:44px;
+																	}
+			#dvFilter	> div										{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 4px;
+																		line-height:10px;
+																		font-size:10pt;
+																		width:52px;
+																		height:40px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		margin:2px 0 2px 2px;
+																		padding-top:4px;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																	}
+			.clsKeySubmit											{
+																		width:80px;
+																		background-color:#F00;
+																	}
+			.clsKeyBtn												{
+																		xwidth:52px;
+																		color:#EEE;
+																		background-color:#222;
+																	}							
+			.clsKeyBtnGreen											{
+																		xwidth:52px;
+																		color:#000;
+																		background-color:#0F0;
+																	}	
+			.clsKeyBtnBlue											{
+																		xwidth:52px;
+																		color:#FFF;
+																		background-color:#00F;
+																	}	
+			.clsKeyBtnRed											{
+																		xwidth:52px;
+																		color:#FFF;
+																		background-color:#F00;
+																	}	
+				.clsSearchField											{font-weight:normal;}
+				.clsSearchTerm											{font-weight:normal;}
+			#selFilterGenre												{
+																			xbackground-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.6)), to(rgba(255, 255, 255, 0)));
+																			float : left;
+																			width:118px;
+																			height:40px;
+																			margin:1px 0 2px 2px;
+																			font-size:10pt;
+																			color:#fff;
+																		}
+			#selFilterGenre	>  .clsSelected								{
+																			color:#222;
+																			background-color:#0E0;
+																			background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.6)), to(rgba(255, 255, 255, 0)));
+																		}	
+			#selFilterYear												{
+																			xbackground-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.6)), to(rgba(255, 255, 255, 0)));
+																			float : left;
+																			width:88px;
+																			height:40px;
+																			margin:1px 0 2px 2px;
+																			font-size:10pt;
+																			color:#fff;
+																		}
+		#dvResult														{position:absolute;width:320px;height:1px;padding:0px;overflow:hidden;
+																		} /*position:absolute;*/
+		.clsPortraitBusy												{background:#000 url(skinimg/iphone/result_busy.jpg) no-repeat 0 50%;}
+		.clsPortraitReady												{background:#000 url(skinimg/iphone/result_ready.jpg) no-repeat 0 50%;}																			
+		#dvResultContainer 												{position:absolute;width:320px;} 
+			#dvResultContainer	> div > div								{
+			/* main topic container */									-webkit-box-sizing: border-box;
+																		float:left;
+																		width:320px;
+																		height:48px;
+																		border-top: 1px solid #111;
+																		text-overflow: ellipsis;
+																		opacity: .6;
+																		} 
+			#dvResultContainer	> div > div > div							{
+																		float:left;
+																		overflow:hidden;
+																		text-overflow: ellipsis;
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		
+																		} 
+		body[class="portrait"] #dvDialog									{width:320px;height:200px;color:#000;}
+				/* PLACEHOLDER */
+				.cls_type_void											{display:none;}
+				/* PLAYLISTS */
+				.cls_type_playlist										{padding:4px;}
+				.cls_type_playlist > .cls_entry_title					{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_playlist > .cls_entry_details					{xheight:10px;margin:2px;height:12px;overflow:hidden;font-size:8pt}
+				/* ARTIST ENTRIES */
+				.cls_type_artist										{padding:4px;}
+				.cls_type_artist > .cls_entry_title						{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_artist > .cls_entry_artist_albumcount			{height:14px;max-width:160px;margin:2px;font-size:8pt;font-weight:bold;}
+				.cls_type_artist > .cls_entry_artist_songcount			{height:14px;max-width:160px;margin:2px;font-size:8pt;font-weight:bold;}
+				/* ALBUM ENTRIES */
+				.cls_type_album											{padding:4px;}
+				.cls_type_album > .cls_entry_title						{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_album > .cls_entry_album_artistname			{height:10px;max-width:276px;margin:2px;font-size:8pt;}
+				.cls_type_album > .cls_entry_album_songcount				{height:10px;max-width:36px;margin:2px;font-size:8pt;}
+				/* SONG ENTRIES */
+				.cls_type_song											{padding:4px;}
+				.cls_type_song	> .cls_entry_title						{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_playlist_song > .cls_entry_quality,
+				.cls_type_song	> .cls_entry_quality					{
+																		width:28px;
+																		height:14px;
+																		line-height:15px;
+																		font-weight:bold;
+																		font-size:7pt;
+																		overflow:hidden;
+																		float:left;
+																		text-align:center;
+																		margin-right:2px;
+																}		
+					.flac			{background-color:#0F0;color:#000;}
+					.mp3			{background-color:#00F;color:#fff;}
+					.grps			{background-color:#F00;color:#fff;}
+				.cls_type_song	> .cls_entry_artist						{height:14px;max-width:190px;margin:2px 2px 0 0;font-size:8pt;}
+				.cls_type_song	> .cls_entry_year						{height:14px;max-width:26px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+				.cls_type_song	> .cls_entry_genre						{height:14px;max-width:36px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+				.cls_type_song	> .cls_entry_duration					{height:14px;max-width:36px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+				/* YEAR ENTRIES */
+				.cls_type_year											{padding-left:6px;}
+				.cls_type_year > .cls_entry_title						{width:312px;margin:2px;height:42px;line-height:42px;font-size:14pt; text-overflow: ellipsis;white-space: nowrap;float:left;color:#000;}
+				/* DATE ENTRIES */
+				.cls_type_date											{padding:2px;}
+				.cls_type_date > .cls_entry_date_year					{width:80px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_date > .cls_entry_date_month					{margin: 10px 0 0 0;width:100px;height:30px;line-height:30px;overflow:hidden;font-size:8pt;float:left;}
+				.cls_type_date > .cls_entry_date_day						{margin: 10px 0 0 0;width:100px;height:30px;line-height:30px;overflow:hidden;font-size:8pt;float:left;}
+				/* GENRE ENTRIES */
+				.cls_type_genre											{padding-left:6px;}
+				.cls_type_genre > .cls_entry_title						{width:312px;margin:2px;height:42px;line-height:42px;font-size:14pt; text-overflow: ellipsis;white-space: nowrap;float:left;color:#000;}
+				
+				/* SONG ENTRIES */
+				.cls_type_playlist_song									{padding:4px;}
+				.cls_type_playlist_song	> .cls_entry_title				{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_playlist_song	> .cls_entry_artist				{height:14px;max-width:190px;margin:2px 2px 0 0;font-size:8pt;}
+				.cls_type_playlist_song	> .cls_entry_year				{height:14px;max-width:26px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+				.cls_type_playlist_song	> .cls_entry_genre				{height:14px;max-width:36px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+				.cls_type_playlist_song	> .cls_entry_duration			{height:14px;max-width:36px;margin:2px 2px 0 0;font-size:8pt;float:right;}
+
+				/* FAMILY ENTRIES */
+				.cls_type_family										{padding:4px;}
+				.cls_type_family > .cls_entry_title						{width:312px;height:24px;font-size:14pt;overflow:hidden;float:left;}
+				.cls_type_family > .cls_entry_status						{
+																		width:60px;
+																		height:14px;
+																		line-height:15px;
+																		font-weight:bold;
+																		font-size:7pt;
+																		overflow:hidden;
+																		float:left;
+																		text-align:center;
+																		margin-right:2px;
+																		}					
+					.uptodate											{background-color:#0F0;color:#000;}
+					.outdated											{background-color:#F00;color:#fff;}
+					.local												{background-color:#00F;color:#fff;}
+				.cls_type_family > .cls_entry_details					{margin:1px 0 0 4px;height:12px;overflow:hidden;font-size:8pt}
+					
+				
+				.Normal													{color:#eee;background-color:#444}
+				.Selected												{color:#fff;background-color:#00f}
+				.Current												{color:#fff;background-color:#c00}
+/****************
+***** FOOTER   *******************************************************
+*****************/
+			#dvFooterMenu												{
+																		position:absolute;
+																		height: 50px;
+																		width:320px;
+																		left:0px;
+																		bottom:0px;
+																		xbackground-color:#444;
+																		overflow:hidden;
+																		font-size:10px;
+																		text-align:center;
+																		font-weight:bold;
+																		}
+			#dvFooterSwipeDiv											{
+																		position:relative;
+																		width:640px;
+																		color:#eee;
+																		font-size:10px;
+																		font-weight:bold;
+																		line-height:10px;
+																		-webkit-transition-property: left;
+																		-webkit-transition-duration: 0.5s;
+																		} 
+			#dvFooterSwipeDiv > DIV										{
+																		-webkit-box-sizing: border-box;
+																		-webkit-border-radius: 6px;
+																		padding-top:8px;
+																		height:42px;
+																		width:62px;
+																		float:left;
+																		text-align:center;
+																		overflow:hidden;
+																		margin:2px 0 2px 2px;
+																		xmargin:4px 2px 4px 2px;
+																		display: block;
+																		font-size:8pt;
+																		}
+				.clsButtonBrowse										{
+																		background-color:#000;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		}
+				.clsButtonRed											{
+																		background-color:#F00;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		}
+				.clsButtonBlue											{
+																		background-color:#00F;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		}																		
+				.clsButtonLeftArrow										{
+																		background-color:#00F;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		}
+				.clsButtonRightArrow									{
+																		background-color:#00F;
+																		background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255,255, 0.7)), to(rgba(255, 255, 255, 0.1)));
+																		}
+				.clsHideButton											{
+																		display:none;
+																		}
+
+		

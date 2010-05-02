@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Koekeloer XML debugger - <*APP_VERSION*></title>
+	<SCRIPT src="/include/prototype.js" type="text/javascript"></SCRIPT>
+	<SCRIPT src="/include/constants.js" type="text/javascript"></SCRIPT>
+	<SCRIPT src="/include/weblib.cls" type="text/javascript"></SCRIPT>
+	<SCRIPT src="/include/dbcommand.cls" type="text/javascript"></SCRIPT>
+	<script language="JavaScript" type="text/javascript">
+		function clsTellaVision(){
+		}
+		function clsSettings(){
+			this.bGuest = <*IS_GUEST*>;
+			this.bOnWan = <*IS_WANUSER*>;
+			this.MyIP = "<*CLIENT_LAN_IP*>";
+			this.ServerLanIp = "<*SERVER_LAN_IP*>";
+			this.ServerWanIp = "<*SERVER_WAN_IP*>";
+			this.ServerLanPort = "<*SERVER_LAN_PORT*>";
+			this.ServerWanPort = "<*SERVER_WAN_PORT*>";
+			this.AppVersion = "<*APP_VERSION*>";
+			this.ServerRecSet = <*APP_PAGERECORDS*>;
+			this.ConsoleWidth = <*CONSOLE_WIDTH*>;
+			this.ConsoleHeight = <*CONSOLE_HEIGHT*>;
+		}
+		var objAjaxResponse = Object;
+		var sXMLprocessor = "xml";  // sys.xml
+		var bRemote = false;
+		var iMediaType = 0;
+		var iAction = 0;
+		var iTargetMode = 0;
+		var iSearchType = 0;
+
+		var Settings = new clsSettings();				//	contains all by server populated application settings
+		var WL = new clsWebLibrary();				//	generic function library
+		var DataCommand = new clsDbCommand();		//	database ajax layer
+		var TellaVision = new clsTellaVision();		//	main navigation & content handling
+
+		if (!window.ActiveXObject) var serializer = new XMLSerializer();
+
+		function SendAjaxMessage(strXMLquery)
+		{
+			if (!window.ActiveXObject)
+			{
+				var Fiets = new Ajax.Request(sXMLprocessor,{asynchronous:false,postBody:strXMLquery, onSuccess:function(t){$("frOut").value = serializer.serializeToString(t.responseXML);}, onFailure:function(t){alert('Ajax.Request.error: ' + t.status + ' -- ' + t.statusText);}});	
+			}
+			else
+			{
+				var Fiets = new Ajax.Request(sXMLprocessor,{asynchronous:false,postBody:strXMLquery, onSuccess:function(t){$("frOut").value = t.responseText;}, onFailure:function(t){alert('Ajax.Request.error: ' + t.status + ' -- ' + t.statusText);}});	
+			}
+		}
+		
+		function init()
+		{
+			setSelection();
+			document.cookie = "koekeloer=00000000000000"
+		}
+	
+		function setSelection(){
+			$("txtIn").value = "<xml ck=\"00000000000000\" rc=\"" + ((bRemote)?'1':'0') + "\" s1=\"%\" s2=\"" + iMediaType + "\" s3=\"" + iTargetMode + "\" s4=\"" + iSearchType + "\" dp=\"" + iAction + "\"><dtyr></dtyr><dtmh></dtmh><dtdy></dtdy><geid>-1</geid><brte>0</brte><bsdr>0</bsdr></xml>";
+		}
+	
+	</script>
+	</head>
+	<body scroll=no onload="init()">
+		<select onchange="iAction = this.options[this.selectedIndex].value;setSelection()">
+			<option value="320">db_browse_artist_songs = 320</option>
+			<option value="321">db_browse_artist_albums = 321</option>
+			<option value="310">db_browse_album_songs = 310</option>
+			<option value="330">db_browse_genre 330</option>
+			<option value="305">db_browse_year 305</option>
+			<option value="340">db_browse_history 340</option>
+			<option value="341">db_browse_history_selection 341</option>
+			<option value="350">db_browse_page = 350</option>
+			<option value="504">db_webtree_topic_get = 504</option>
+			<option value="506">db_webtree_topic_children = 506</option>
+			<option value="200">db_playlist_list = 200</option>
+			<option value="201">db_playlist_list_add = 201</option>
+			<option value="212">db_playlist_list_artists = 212</option>
+			<option value="213">db_playlist_list_albums = 213</option>
+			<option value="214">db_playlist_list_songs = 214</option>
+			
+			<option value="204">db_playlist_list_artist_add = 204</option>
+			<option value="205">db_playlist_list_album_add = 205</option>
+			<option value="206">db_playlist_list_song_add = 206</option>
+			<option value="207">db_playlist_list_song_delete = 207</option>
+
+			
+			<option value="75">db_player_video = 75</option>
+			<option value="720">db_storage_list = 720</option>		
+			<option value="721">db_storage_scan = 721</option>      
+			<option value="722">db_storage_import = 722</option>      
+			<option value="723">db_storage_export = 723</option>      
+			<option value="724">db_storage_xmlupdate = 724</option>      
+			
+			<option value="68">db_system_volume_set = 68</option>
+			<option value="71">db_system_status = 71</option>
+			<option value="64">db_system_play_song = 64</option>
+			<option value="65">db_system_stop_song = 65</option>
+			<option value="66">db_system_pause_song = 66</option>
+			<option value="67">db_system_resume_song = 67</option>
+			<option value="400" selected>db_search = 400</option>
+			<option value="700">family_list = 700</option>
+			<option value="701">family_invite = 701</option>
+			<option value="702">family_accept = 702</option>
+			<option value="703">family_scan = 703</option>
+			<option value="1000">sys_shutdown = 1000</option>
+			<option value="1003">sys_debug = 1003</option>
+			<option value="1004">sys_wipe = 1004</option>
+			
+			
+		</select>
+		<select onchange="iMediaType = this.options[this.selectedIndex].value;setSelection()">
+			<option value="0">type_artist = 0</option>
+			<option value="1">type_album = 1</option>
+			<option value="2">type_song = 2</option>
+			<option value="3">type_user = 3</option>
+			<option value="4">type_playlist = 4</option>
+			<option value="5">type_genre = 5</option>
+			<option value="6">type_playlist_song = 6</option>
+			<option value="7">type_year = 7</option>
+			<option value="8">type_date = 8</option>
+			<option value="9">type_family = 9</option>
+		</select>		
+		
+		<select onchange="iTargetMode = this.options[this.selectedIndex].value;setSelection()">
+			<option value="414">search_targeting_begin = 414</option>
+			<option value="415">search_targeting_exact = 415</option>
+			<option value="416" selected>search_targeting_loose = 416</option>
+		</select>		
+
+		<select onchange="iSearchType = this.options[this.selectedIndex].value;setSelection()">
+			<option value="417">media_flac = 417</option>
+			<option value="418">media_mp3 = 418</option>
+			<option value="419">media_grps = 419</option>
+			<option value="420" selected>media_all = 420</option>
+		</select>	
+		
+		<input type="checkbox" name="chk_remotecontrol" value="" onchange="bRemote = this.checked;setSelection()">remote control
+
+		<input type=button onclick="SendAjaxMessage($('txtIn').value)" value="Go" >
+		<input type=button onclick="$('frX').value = unescape($('frOut').value)" value="Unescape" >
+		<textarea cols="" rows="" name="txtIn" id="txtIn" style="width: 100%; height: 20%;"><xml ck="00000000000000" rc="0" s1="%" s2="0" s3="416" s4="420" dp="400"><dtyr></dtyr><dtmh></dtmh><dtdy></dtdy><geid>-1</geid><brte>0</brte><bsdr>0</bsdr></xml></textarea>
+		<textarea cols="" rows="" name="frOut" id="frOut" style="width: 100%; height: 50%;"></textarea>
+		<textarea cols="" rows="" name="frX" id="frX" style="width: 100%; height: 20%;"></textarea>
+	</body>
+</html>

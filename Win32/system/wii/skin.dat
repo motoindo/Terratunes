@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Wii - Full Screen Test</title>
+		<style><*CONSOLE_STYLE*></style>	
+		<SCRIPT src="/include/prototype.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/constants.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/language.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/weblib.cls" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/dbcommand.cls" type="text/javascript"></SCRIPT>		
+		<script src="/include/flash/swfobject.js" type="text/javascript" ></script>		
+		<script src="/include/flash/flashplayer.cls" type="text/javascript" ></script>		
+		<SCRIPT type="text/jscript">
+			function clsSettings(){
+				this.bGuest = <*IS_GUEST*>;
+				this.bOnWan = <*IS_WANUSER*>;
+				this.MyIP = "<*CLIENT_LAN_IP*>";
+				this.ServerLanIp = "<*SERVER_LAN_IP*>";
+				this.ServerWanIp = "<*SERVER_WAN_IP*>";
+				this.ServerLanPort = "<*SERVER_LAN_PORT*>";
+				this.ServerWanPort = "<*SERVER_WAN_PORT*>";
+				this.ServerPageRecordCount = <*SERVER_PAGECOUNT*>;
+				this.AppVersion = "<*APP_VERSION*>";
+				this.ServerRecSet = <*APP_PAGERECORDS*>;
+				this.ConsoleWidth = <*CONSOLE_WIDTH*>;
+				this.ConsoleHeight = <*CONSOLE_HEIGHT*>;
+			}
+			<*CONSOLE_SCRIPT*>			
+		</SCRIPT>	  
+	</head>
+	<body>
+	  <div id="dvPlayer"></div>
+	  pik
+
+
+	</body>
+
+</html>

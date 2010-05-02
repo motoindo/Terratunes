@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>DBXML</title>
+</head>
+<script language="JavaScript" type="text/javascript">
+	var sXMLprocessor = "http://amd3800/sys.xml";
+	var sXMLstringStart = "<xml><s1></s1><s2></s2><s3></s3><s4></s4><selset><le>1</le><le>2</le></selset><dp>";
+	var sXMLstringEnd = "</dp></xml>";
+
+function SendXmlMessage(sXML)
+{
+    var oMsg = new ActiveXObject("Microsoft.XMLHTTP")
+    var oConfirm = new ActiveXObject("Microsoft.XMLDOM");
+    oMsg.open("POST", sXMLprocessor, false)
+    oMsg.send(sXML)
+    frOut.value = oMsg.responseText;
+}
+
+function init()
+{
+	txtIn.value = sXMLstringStart + 0 + sXMLstringEnd
+}
+</script>
+<body scroll=no onload="init()">
+<select onclick="txtIn.value = sXMLstringStart + this.options[this.selectedIndex].value + sXMLstringEnd">
+
+
+	<option value="0"> db_system_init = 0</option>
+	<option value="1"> db_system_update = 1</option>
+	<option value="2"> db_distinct_songs = 2</option>
+	<option value="3"> db_clone_artist = 3</option>
+	<option value="4"> db_clone_album = 4</option>
+	<option value="5"> db_clone_song = 5</option>
+	<option value="6"> db_update_song = 6</option>
+	<option value="7"> db_update_artist = 7</option>
+	<option value="8"> db_update_album = 8</option>
+	<option value="9"> db_remove_artist = 9</option>
+	<option value="10"> db_remove_album = 10</option>
+	<option value="11"> db_remove_song = 11	</option>
+	<option value="12"> db_cleanup_songs = 12</option>
+	
+	
+	<option value="400"> db_search = 400</option>
+	<option value="200"> db_playlist_list = 200</option>
+	<option value="201"> db_playlist_list_add = 201</option>
+	<option value="202"> db_playlist_list_delete = 202</option>
+	<option value="203"> db_playlist_list_update = 203</option>
+	<option value="204"> db_playlist_list_artist_add = 204</option>
+	<option value="205"> db_playlist_list_album_add = 205</option>
+	<option value="206"> db_playlist_list_entry_add = 206</option>
+	<option value="207"> db_playlist_list_entry_delete = 207</option>
+	<option value="208"> db_playlist_list_default = 208</option>
+	<option value="209"> db_playlist_list_artists = 209</option>
+	<option value="210"> db_playlist_list_albums = 210</option>
+	<option value="211"> db_playlist_list_songs = 211</option>
+	<option value="212"> db_playlist_list_genres = 212</option>
+	<option value="300"> db_browse_song_year = 300</option>
+	<option value="301"> db_browse_song_albums = 301</option>
+	<option value="302"> db_browse_song_twins = 302</option>
+	<option value="303"> db_browse_song_twins_artists = 303</option>
+	<option value="304"> db_browse_year = 304</option>
+	<option value="310"> db_browse_album_songs = 310</option>
+	<option value="311"> db_browse_album_artists = 311</option>
+	<option value="312"> db_browse_album_songs_artist = 312</option>
+	<option value="320"> db_browse_artist_songs = 320</option>
+	<option value="321"> db_browse_artist_albums = 321</option>
+	<option value="322"> db_browse_artist_albums_owned = 322</option>
+	<option value="323"> db_browse_artist_albums_va = 323</option>
+	<option value="330"> db_browse_genre = 330</option>
+	<option value="331"> db_browse_genre_artists = 331</option>
+	<option value="332"> db_browse_genre_albums = 332</option>
+	<option value="333"> db_browse_genre_songs = 333</option>
+	<option value="340"> db_browse_history_artists = 340</option>
+	<option value="341"> db_browse_history_albums = 341</option>
+	<option value="342"> db_browse_history_songs = 342</option>
+	<option value="343"> db_browse_history_genres = 343</option>
+	<option value="344"> db_browse_history_log = 344</option>
+	<option value="400"> db_webtree_getchildren = 400</option>
+	<option value="401"> db_webtree_getcontent = 401</option>
+	<option value="500"> db_users_log_song = 500</option>
+	<option value="600"> db_users_list = 600</option>
+	<option value="601"> db_users_register = 601</option>
+</select>
+
+<input type=button onclick="SendXmlMessage(txtIn.value)" value="Go" >
+<input type=button onclick="frX.value = unescape(frOut.value)" value="Unescape" >
+<textarea name="txtIn" style="width: 100%; height: 20%;">
+<xml><ai></ai><ia></ia><si></si><gi></gi><pi></pi><dp>0</dp><ss></ss></xml></textarea>
+<textarea name="frOut" style="width: 100%; height: 50%;"></textarea>
+<textarea name="frX" style="width: 100%; height: 20%;"></textarea>
+
+
+
+
+
+</body>
+</html>

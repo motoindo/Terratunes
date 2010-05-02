@@ -1,0 +1,361 @@
+body 
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin:0px;
+	width:800px;
+	height:600px;
+}
+	#idBodyContainer						{
+											background-color:#000000;
+											z-index:1;position:absolute;top:0px;left:0px;width:800px;height:600px;margin:0px;padding:0px;font-size: 8pt;font-family:'MS Sans Serif';font-weight:normal;
+											}
+	#idVolume								{
+											z-index:1;position:absolute;top:128px;left:10px;width:50px;height:440px;float:left;
+											background-color:#808000;;
+											}
+	#idVolTouchLayer						{z-index:3;position:absolute;top:128px;left:10px;width:46px;height:450px;}
+	#idVolumeScroller						{
+											z-index:2;position:absolute;text-align:center;left:10px;padding-top:20px;background-color:#caca00;
+											color:#000000;top:508px;width:50px;height:63px;
+											}
+	#dvSystemStatus							{
+											z-index:1;position:absolute;bottom:0px;left:10px;height:22px;width:780px;padding:3px;
+											color:#ffffff;text-align:left;background-color:#808000;
+											}
+	
+	#idPlayerTimer							{position:absolute;top:80px;left:12px;}
+		.clsPlayerTimerScale				{
+											height:40px;width:5px;background-color:#808000;float:left;margin:1px;
+											}
+		.clsPlayerTimerScaleLoaded		
+											{
+											height:40px;width:5px;background-color:#caca00;float:left;margin:1px;
+											}
+		.clsPlayerTimerScaleSelected		{
+											height:40px;width:5px;background-color:#ff4040;float:left;margin:1px;
+											}
+	#idPlayerControls						{margin-left:10px;padding-top:4px;}
+		.clsButton_ControlBar				{
+												z-index:1;margin-right:2px;text-align:center;float:left;
+												color:#ffffff; background-color:#808000;overflow:hidden;
+											}				
+		.clsButton_ControlBarSelected		{
+												z-index:1;margin-right:2px;text-align:center;float:left;
+												color:#000000; background-color:#caca00;overflow:hidden;
+											}	
+		.clsButton_Image					{
+											padding-top:54px;background-repeat:no-repeat;background-position:50% 4px;
+											}
+		.clsButton_ControlBarSelectedImage	{padding-top:46px;width:38px;height:45px;background-repeat:no-repeat;background-position:50% 50%;}
+			#btn_type_artist				{background-image:url('../images/btn_type_artist.gif');}
+			#btn_type_album					{background-image:url('../images/btn_type_album.gif');}
+			#btn_type_song					{background-image:url('../images/btn_type_song.gif');}
+			#btn_type_year					{background-image:url('../images/btn_type_year.gif');}
+			#btn_menu_playlist				{background-image:url('../images/btn_menu_playlist.gif');}
+			#btn_menu_playlists				{background-image:url('../images/btn_menu_playlists.gif');}
+			#btn_menu_history				{background-image:url('../images/btn_menu_history.gif');}
+			#btn_menu_search				{background-image:url('../images/btn_menu_search.gif');}
+			#btn_menu_genre					{background-image:url('../images/btn_menu_genre.gif');}
+			#btn_player_previous			{background-image:url('../images/btn_player_previous.gif');}
+			#btn_player_pause				{background-image:url('../images/btn_player_pause.gif');}
+			#btn_player_start				{background-image:url('../images/btn_player_start.gif');}
+			#btn_player_stop				{background-image:url('../images/btn_player_stop.gif');}
+			#btn_player_next				{background-image:url('../images/btn_player_next.gif');}
+			
+			
+			#btn_db_search_year				{background-image:url('../images/btn_type_year.gif');}
+			#btn_db_browse_artist_songs		{background-image:url('../images/btn_menu_song.gif');}
+			#btn_db_browse_artist_albums	{background-image:url('../images/btn_type_album.gif');}
+
+			#btn_db_browse_history_songs		{background-image:url('../images/btn_type_song.gif');}
+			#btn_db_browse_history_artists		{background-image:url('../images/btn_type_artist.gif');}
+			#btn_db_browse_history_albums		{background-image:url('../images/btn_type_album.gif');}
+			#btn_db_browse_history_genres		{background-image:url('../images/btn_menu_genre.gif');}
+			
+			
+	#dvSideNavigation					{z-index:1;position:absolute;top:128px;right:8px;height:440px;color:#ffffff;font-size:8pt;padding-left:6px;text-align:center}
+		.cls_current_button						{margin:2px;width:85px;height:71px;background-color:#808000;background-repeat:no-repeat;padding-top:2px;background-position:center 18px;}	
+		#idQuerySubMenu							{margin:2px;}
+							.clsButton_QuerySubMenu				{
+																	z-index:1;text-align:center;float:left;border:1px solid #343434;padding:4px;
+																	color:#000000; background-color:#808000;overflow:hidden;
+																}				
+							.clsButton_QuerySubMenuSelected		{z-index:1;text-align:center;float:left;padding:4px;
+																	color:#000000; background-color:#ff8800;overflow:hidden;
+																}	
+							#idQuerySubMenu .clsButton_Image	{
+																padding-top:60px;background-repeat:no-repeat;background-position:50% 8px;
+																}
+																
+																
+
+
+	
+	
+																
+	#idContentContainer					{z-index:1;position:absolute;top:128px;left:64px;width:652px;height:440px;padding:0px;overflow:hidden}
+		#idQueryResult							{position:absolute;}
+			.cls_search_entry
+												{
+												z-index:1;width:210px;height:86px;margin:1px;float:left;
+												color:#caca00; background-color:#444444;overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_title
+												{
+													margin:4px;
+													font-size:12pt;font-family:Arial;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_details
+												{
+													position:absolute;
+													bottom:4px;left:4px;
+													font-size:10pt;font-family:Arial;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_genre
+												{
+													margin-left:6px;margin-bottom:4px;
+													font-size:8pt;xwidth:120px;
+													float:left;
+													text-align:left;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_artist
+												{
+													margin-right:6px;margin-bottom:4px;
+													font-size:8pt;xwidth:120px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_album
+												{
+													margin:6px;font-size:8pt;xwidth:298px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_year
+												{
+													margin:6px;font-size:8pt;xwidth:84px;
+													float:left;
+													text-align:left;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_duration
+												{
+													margin:6px;font-size:8pt;xwidth:84px;
+													float:left;
+													text-align:center;
+													overflow:hidden;
+												}
+			.cls_search_entry .cls_entry_bitrate
+												{
+													margin:6px;font-size:8pt;xwidth:84px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+
+
+			.cls_type_user,
+			.cls_type_playlist,
+			.cls_type_artist,
+			.cls_type_album,
+			.cls_db_browse_artist_songs
+												{
+												z-index:1;width:310px;height:214px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#caca00; background-color:#444444;overflow:hidden;
+												background-repeat : no-repeat;
+												background-position-x : 6px;
+												background-position-y : 6px;
+												}
+			.cls_type_user_selected,
+			.cls_type_playlist_selected,
+			.cls_type_artist_selected,
+			.cls_type_album_selected,
+			.cls_db_browse_artist_songs_selected
+												{
+												z-index:1;width:310px;height:214px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#ff0000; background-color:#444444;overflow:hidden;
+												background-repeat : no-repeat;
+												background-position-x : 6px;
+												background-position-y : 6px;
+												}
+			.cls_type_user_current,
+			.cls_type_playlist_current,
+			.cls_type_artist_current,
+			.cls_type_album_current,
+			.cls_db_browse_artist_songs_current
+												{
+												z-index:1;width:310px;height:214px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#ffffff; background-color:#670707;overflow:hidden;
+												background-repeat : no-repeat;
+												background-position-x : 6px;
+												background-position-y : 6px;
+												}
+			.cls_type_user .cls_entry_title,
+			.cls_type_playlist .cls_entry_title,
+			.cls_type_artist .cls_entry_title,
+			.cls_type_album .cls_entry_title,
+			.cls_db_browse_artist_songs .cls_entry_title,
+			.cls_type_user_selected .cls_entry_title,
+			.cls_type_playlist_selected .cls_entry_title,
+			.cls_type_artist_selected .cls_entry_title,
+			.cls_type_album_selected .cls_entry_title,
+			.cls_db_browse_artist_songs_selected .cls_entry_title,
+			.cls_type_user_current .cls_entry_title,
+			.cls_type_playlist_current .cls_entry_title,
+			.cls_type_artist_current .cls_entry_title,
+			.cls_type_album_current .cls_entry_title,
+			.cls_db_browse_artist_songs_current .cls_entry_title
+												{
+													position:absolute;
+													top:6px;right:6px;width:92px;
+													font-size:12pt;font-family:Arial;
+													overflow:hidden;
+												}
+			.cls_type_user .cls_entry_details,
+			.cls_type_playlist .cls_entry_details,
+			.cls_type_artist .cls_entry_details,
+			.cls_type_album .cls_entry_details,
+			.cls_db_browse_artist_songs .cls_entry_details,
+			.cls_type_user_selected .cls_entry_details,
+			.cls_type_playlist_selected .cls_entry_details,
+			.cls_type_artist_selected .cls_entry_details,
+			.cls_type_album_selected .cls_entry_details,
+			.cls_db_browse_artist_songs_selected .cls_entry_details,
+			.cls_type_user_current .cls_entry_details,
+			.cls_type_playlist_current .cls_entry_details,
+			.cls_type_artist_current .cls_entry_details,
+			.cls_type_album_current .cls_entry_details,
+			.cls_db_browse_artist_songs_current .cls_entry_details
+												{
+													position:absolute;
+													bottom:6px;right:6px;width:92px;
+													font-size:10pt;font-family:Arial;
+													overflow:hidden;
+												}
+			.cls_type_song
+												{
+												z-index:1;width:310px;height:102px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#caca00; background-color:#444444;overflow:hidden;
+												}
+
+			.cls_type_song_selected
+												{
+												z-index:1;width:310px;height:102px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#ff0000; background-color:#444444;overflow:hidden;
+												}
+
+			.cls_type_song_current
+												{
+												z-index:1;width:310px;height:102px;margin-left:4px;margin-right:4px;margin-bottom:8px;float:left;
+												color:#ffffff; background-color:#670707;overflow:hidden;
+												}
+			.cls_type_song .cls_entry_title,
+			.cls_type_song_selected .cls_entry_title,
+			.cls_type_song_current .cls_entry_title
+												{
+													margin:6px;font-weight:bold;
+													border-bottom: 1px solid;
+													font-size:12pt;height:24px;xwidth:298px;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_genre,
+			.cls_type_song_selected .cls_entry_genre,
+			.cls_type_song_current .cls_entry_genre
+												{
+													margin-left:6px;margin-bottom:4px;
+													font-size:8pt;xwidth:120px;
+													float:left;
+													text-align:left;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_artist,
+			.cls_type_song_selected .cls_entry_artist,
+			.cls_type_song_current .cls_entry_artist
+												{
+													margin-right:6px;margin-bottom:4px;
+													font-size:8pt;xwidth:120px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_album,
+			.cls_type_song_selected .cls_entry_album,
+			.cls_type_song_current .cls_entry_album
+												{
+													margin:6px;font-size:8pt;width:298px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_year,
+			.cls_type_song_selected .cls_entry_year,
+			.cls_type_song_current .cls_entry_year
+												{
+													margin:6px;font-size:8pt;width:84px;
+													float:left;
+													text-align:left;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_duration,
+			.cls_type_song_selected .cls_entry_duration,
+			.cls_type_song_current .cls_entry_duration
+												{
+													margin:6px;font-size:8pt;width:84px;
+													float:left;
+													text-align:center;
+													overflow:hidden;
+												}
+			.cls_type_song .cls_entry_bitrate,
+			.cls_type_song_selected .cls_entry_bitrate,
+			.cls_type_song_current .cls_entry_bitrate
+												{
+													margin:6px;font-size:8pt;width:84px;
+													float:right;
+													text-align:right;
+													overflow:hidden;
+												}
+												
+
+			
+		#idWebKeyboard				{
+										z-index:3;position:absolute;bottom:26px;left:62px;width:660px;font-size:14pt;
+										font-weight:bold;color:#ffffff;}
+			.clsSearchPane			{
+										background-color:#808000;margin:1px;width:510px;height:42px;float:left;
+										padding-left:4px;padding-top:1px;
+										font-size:12pt;font-weight:normal;
+									}
+			.clsSearchTerm			{color:#ffffff;font-size:12pt;font-weight:bold;}
+			.clsKey					{
+										background-color:#808000;margin:1px;width:62px;height:42px;float:left;
+										padding-left:4px;padding-top:1px;
+									}
+			.clsKeyDown				{
+										background-color:#ffffff;margin:1px;width:62px;height:42px;float:left;
+										padding-left:4px;padding-top:1px;color:#808000;
+									}
+			.clsKeySmallCap			{	
+										background-color:#808000;margin:1px;width:62px;height:42px;float:left;
+										padding-left:4px;padding-top:1px;font-size:10pt;
+									}
+			.clsKeySmallCapDown		{
+										background-color:#808000;margin:1px;width:62px;height:42px;float:left;
+										padding-left:4px;padding-top:1px;font-size:10pt;
+									}
+			.clsSpace				{
+										background-color:#808000;margin:1px;width:510px;height:42px;float:left;
+										text-align:center;padding:6px;
+									}
+			.clsSpacedown			{
+										background-color:#FF0000;margin:1px;width:510px;height:42px;float:left;
+										text-align:center;padding:6px;
+									}
+		#dvPlayer					{float:left;width:600px;height:40px;}
+

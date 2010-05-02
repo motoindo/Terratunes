@@ -1,0 +1,6 @@
+<xml seed="88" mpsts="0" mpvol="100" mpmte="0" ie="0" mpids="0" mpidf="0" mpida="0" mpnms="" mpnma="" ckey="00000000000000" dp="720" ti="8" pi="1" pc="1" px="1" sk="0:0:0:0:0:0" rc="3">
+	<disk id="0" name="mp3" store_flac="0" store_grps="0" store_mp3="1" scan="0" scanchanged="0" import="0" move="0" status="0">C:\Data\media\audio\mp3</disk>
+	<disk id="1" name="grps" store_flac="0" store_grps="1" store_mp3="0" scan="0" scanchanged="0" import="0" move="0" status="0">C:\Data\media\audio\grps</disk>
+	<disk id="2" name="flac" store_flac="1" store_grps="0" store_mp3="0" scan="0" scanchanged="0" import="0" move="0" status="0">C:\Data\media\audio\flac</disk>
+	<disk id="3" name="import" store_flac="0" store_grps="0" store_mp3="0" scan="0" scanchanged="0" import="1" move="0" status="0">C:\Data\media\import</disk>
+</xml>

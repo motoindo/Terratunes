@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<TITLE>Piratelogic</TITLE>
+		<meta http-equiv="Comments" content="Problems worthy of attack, prove their worth by hitting back.">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" type="text/css" href="/include/ext/resources/css/ext-all.css" />
+		<style><*CONSOLE_STYLE*></style>		
+		<SCRIPT type="text/javascript"src="/include/constants.js" ></SCRIPT>
+		<script type="text/javascript"src="/include/ext/adapter/ext/ext-base.js"></script>
+		<script type="text/javascript"src="/include/ext/ext-all.js"></script>
+		<script type="text/javascript"src="/include/ext/examples/ux/XmlTreeLoader.js"></script>
+		<script type="text/javascript" src="/include/ext/examples/ux/CheckColumn.js"></script>
+		
+		
+		<SCRIPT type="text/javascript">
+			function clsSettings(){
+				this.bGuest = <*IS_GUEST*>;
+				this.bOnWan = <*IS_WANUSER*>;
+				this.MyIP = "<*CLIENT_LAN_IP*>";
+				this.ServerLanIp = "<*SERVER_LAN_IP*>";
+				this.ServerWanIp = "<*SERVER_WAN_IP*>";
+				this.ServerLanPort = "<*SERVER_LAN_PORT*>";
+				this.ServerWanPort = "<*SERVER_WAN_PORT*>";
+				this.ServerMAC = "<*SERVER_MAC*>";
+				this.ServerPageRecordCount = <*SERVER_PAGECOUNT*>;
+				this.AppVersion = "<*APP_VERSION*>";
+				this.ServerRecSet = <*APP_PAGERECORDS*>;
+				this.ConsoleWidth = <*CONSOLE_WIDTH*>;
+				this.ConsoleHeight = <*CONSOLE_HEIGHT*>;
+			}
+			<*CONSOLE_SCRIPT*>			
+		</SCRIPT>
+	</head>
+	<body>
+    <select name="light" id="light" style="display: none;">
+    	<option value="Shade">Shade</option>
+    	<option value="Mostly Shady">Mostly Shady</option>
+    	<option value="Sun or Shade">Sun or Shade</option>
+    	<option value="Mostly Sunny">Mostly Sunny</option>
+    	<option value="Sunny">Sunny</option>
+    </select>
+    
+    <div id="editor-grid"></div>
+	</body>
+</html>

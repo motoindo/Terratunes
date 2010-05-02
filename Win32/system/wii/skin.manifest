@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# version <%MANIFEST_VERSION%>
+# terratunes offline cache manifest, used to speedup 3G and GRPS loading
+# use config.xml <screen name="iphone" version="xxx" manifest="1"/> version attribute
+# to force client code updates or use manifest attribute to disable offline-caching
+skinimg/iphone/startup.jpg
+skinimg/iphone/splash_portrait_start.jpg
+skinimg/iphone/background_portrait.jpg
+skinimg/iphone/background_portrait_busy.jpg
+skinimg/iphone/splash_landscape_start.png
+skinimg/iphone/result_ready.jpg
+skinimg/iphone/result_busy.jpg
+skinimg/iphone/BarPlaylists_Sel.png
+skinimg/iphone/iphone-logo.png
+skinimg/iphone/BarArtists_Sel.png
+skinimg/iphone/BarAlbums_Sel.png
+skinimg/iphone/BarSongs_Sel.png
+
+include/constants.js
+include/language.js
+include/weblib.cls
+include/dbcommand.cls
+# files under NETWORK will NOT get stored in the iphone nvram
+NETWORK:
+xml

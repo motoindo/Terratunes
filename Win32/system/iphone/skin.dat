@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" <*BODY_MANIFEST*>>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<TITLE>Loading  ...</TITLE>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+		<meta name="apple-touch-fullscreen" content="YES" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1" />
+		<link rel="apple-touch-startup-image" href="skinimg/iphone/startup.jpg">	
+		<link rel="apple-touch-icon" href="skinimg/iphone/iphone-logo.png"/>
+		<style><*CONSOLE_STYLE*></style>		
+		<SCRIPT src="/include/constants.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/language.js" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/weblib.cls" type="text/javascript"></SCRIPT>
+		<SCRIPT src="/include/dbcommand.cls" type="text/javascript"></SCRIPT>
+		<SCRIPT type="text/jscript">
+			function clsSettings(){
+				this.bGuest = <*IS_GUEST*>;
+				this.bOnWan = <*IS_WANUSER*>;
+				this.MyIP = "<*CLIENT_LAN_IP*>";
+				this.ServerLanIp = "<*SERVER_LAN_IP*>";
+				this.ServerWanIp = "<*SERVER_WAN_IP*>";
+				this.ServerLanPort = "<*SERVER_LAN_PORT*>";
+				this.ServerWanPort = "<*SERVER_WAN_PORT*>";
+				this.ServerPageRecordCount = <*SERVER_PAGECOUNT*>;
+				this.AppVersion = "<*APP_VERSION*>";
+				this.ServerRecSet = <*APP_PAGERECORDS*>;
+				this.ConsoleWidth = <*CONSOLE_WIDTH*>;
+				this.ConsoleHeight = <*CONSOLE_HEIGHT*>;
+			}
+			<*CONSOLE_SCRIPT*>			
+		</SCRIPT>		
+	</head>
+	<body id="dvBody" class="portrait">
+		<div id="dvAppTitle"></div>
+		<div id="dvBodyContainerLandscape" style="display:none">
+			<div id="dvMainMessage">HOOFDMENU</div>
+			<div id="dvMainMenu" align="center">
+				<div id="dvMainButton_0"></div>
+				<div id="dvMainButton_1"></div>
+				<div id="dvMainButton_2"></div>
+				<div id="dvMainButton_3"></div>
+				<div id="dvMainButton_4"></div>
+			</div>
+		</div>
+		<div id="dvBodyContainerPortrait" style="display:none">
+			<div id="dvHeaderMenu">
+				<div id="dvHeaderSwipeContainer">
+					<div id="dvHeaderMenuSwipeDiv">
+						<div id="dvMenuButton_0"></div>
+						<div id="dvMenuButton_1"></div>
+						<div id="dvMenuButton_2"></div>
+						<div id="dvMenuButton_3"></div>
+					</div>
+				</div>
+				<div id="dvMessageContainer">
+					<div id="dvMenuButton_4"></div>
+					<div id="dvMessage" class="width_11"></div>
+					<input id="inpText" type="search" class="width_11">
+					<div id="dvMenuButton_7"></div>
+				</div>
+				<div id="dvHeaderMenuContainerMediaPlayer">
+					<div id="dvVolumeContainer">
+						<div id="dvMaskLeft"></div>
+						<div id="dvMaskCenter"></div>
+						<div id="dvVolumeSlider"></div>	
+						<div id="dvMaskRight"></div>
+					</div>					
+					<div id="btnPlayerStop"></div>
+					<div id="btnPlayerPlayPause"></div>
+				</div>
+				<div id="dvFilter">
+					<div id="dvMenuButton_5"></div>
+					<select id="selFilterGenre">
+						<option value="-1">Alle genres</option>
+					</select>
+					<select id="selFilterYear">
+						<option value="">Alle jaren</option>
+					</select>
+					<div id="dvMenuButton_6"></div>
+				</div>
+			</div>
+			<div id="dvResult">
+				<div id="dvResultContainer">
+					<div id="dvDialog"></div>
+					<div id="dvArtists"></div>
+					<div id="dvAlbums"></div>
+					<div id="dvSongs"></div>
+					<div id="dvHistory"></div>
+					<div id="dvPlaylistSongs"></div>
+					<div id="dvPlaylists"></div>
+					<div id="dvFamily"></div>
+				</div>
+			</div>
+			<div id="dvFooterMenu">
+				<div id="dvFooterSwipeDiv">
+					<div id="dvFooterButton_0"></div>
+					<div id="dvFooterButton_1"></div>
+					<div id="dvFooterButton_2"></div>
+					<div id="dvFooterButton_3"></div>
+					<div id="dvFooterButton_4"></div>
+					<div id="dvFooterButton_5"></div>
+					<div id="dvFooterButton_6"></div>
+					<div id="dvFooterButton_7"></div>
+					<div id="dvFooterButton_8"></div>
+					<div id="dvFooterButton_9"></div>
+				</div>
+			</div>	
+		</div>
+		<div id="btnQTNext" style="display:none"></div>
+		<embed 
+			id="qtPlayer" 
+			width="0" 
+			height="0" 
+			autoplay="true" 
+			type="audio/mpeg" 
+			enablejavascript="true" 
+			postdomevents="true" 
+			name="qtMediaPlayer" 
+		/>		
+	</BODY>
+</HTML>

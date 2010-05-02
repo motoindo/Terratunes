@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xml>
+	<skinproperties name="koekeloer 800x480" width="800" height="480" startx="0" starty="0" volscr="27" keyrowy="210" ProgressScrollerCount="78" ProgressScrollerleft="5"/>
+	<playerproperties name="flacflac 800x600" width="0" height="0" startx="0" starty="0"/>
+	<uimodes>
+        <mode name="flacflac_main" imgname="flacflac_main.jpg" titletop="105" titleleft="155" titlewidth="480" titleheight="36" texttop="150" textleft="195" textwidth="400" textheight="150"/>
+        <mode name="flacflac_about" imgname="flacflac_about.jpg" titletop="130" titleleft="350" titlewidth="280" titleheight="36" texttop="200" textleft="350" textwidth="280" textheight="100"/>
+        <mode name="flacflac_settings" imgname="flacflac_settings.jpg" titletop="0" titleleft="0" titlewidth="0" titleheight="0" texttop="290" textleft="158" textwidth="200" textheight="106"/>
+        <mode name="touch_main" imgname="touchscreen_main.jpg" titletop="105" titleleft="155" titlewidth="480" titleheight="36" texttop="145" textleft="155" textwidth="480" textheight="150"/>
+	</uimodes>
+	<elementpositions>
+		<dialogcaption top="80" left="155" width="480" height="20"/>
+		<fielddata idx="1" top="126" left="170" width="390" height="30"/>
+		<fielddata idx="2" top="182" left="170" width="390" height="30"/>
+		<fielddata idx="3" top="240" left="170" width="390" height="30"/>
+		<btn idx="1" top="205" left="64"/>
+		<btn idx="2" top="305" left="180"/>
+		<btn idx="3" top="305" left="270"/>
+		<btn idx="4" top="305" left="360"/>
+		<btn idx="5" top="305" left="450"/>
+		<btn idx="6" top="305" left="540"/>
+		<btn idx="7" top="113" left="566"/>
+		<btn idx="8" top="169" left="566"/>
+		<btn idx="9" top="226" left="566"/>
+		<btn idx="10" top="417" left="4"/>
+		<btnlabel idx="1" top="280" left="70" width="60" height="30" align="2"/>
+		<btnlabel idx="2" top="366" left="180" width="60" height="30" align="2"  />
+		<btnlabel idx="3" top="366" left="270" width="60" height="30" align="2"  />
+		<btnlabel idx="4" top="366" left="360" width="60" height="30" align="2"  />
+		<btnlabel idx="5" top="366" left="450" width="60" height="30" align="2"  />
+		<btnlabel idx="6" top="366" left="540" width="60" height="30" align="2"  />
+		<btnlabel idx="7" top="110" left="170" width="390" height="20" align="0"  />
+		<btnlabel idx="8" top="165" left="170" width="390" height="20" align="0"  />
+		<btnlabel idx="9" top="222" left="170" width="390" height="20" align="0"  />
+		<btnlabel idx="10" top="414" left="4" width="0" height="0" align="2"  />
+	</elementpositions>
+	<buttoninfo>
+		<btn name="btn_menu_main" iconname="btn_mainmenu.jpg" label="hoofd menu" dtitle="Welkom bij FlacFlac" dtext="Met FlacFlac kan je op een simpele en leuke manier jouw muziek beheren, beluisteren en delen met familie en vrienden. Via dit touchscreen zet je in een vingerklik jouw favouriete muziek op, met je iPhone kan je hem op afstand besturen en via de ingebouwde webserver is je muziek overal te beluisteren door jou en jouw familie. Klik op de knop 'flacflac touchscreen' om naar muziek te luisteren, 'flacflac beheer' om deze flacflac server te beheren of 'flacflac afsluiten' om deze flacflac server af te sluiten. "/>
+		<btn name="btn_menu_admin" iconname="btn_admin.jpg" label="flacflac beheer" dtitle="flacflac administratie" dtext="Gebruik dit scherm om mensen toe te voegen of te verwijderen uit jouw flacflac familie, jouw MP3 folder opnieuw in te lezen of daar liedjes aan toe te voegen uit de import folder. Druk op de knop links om dit menu weer te verlaten"/>
+		<btn name="btn_menu_settings" iconname="btn_settings.jpg" label="flacflac instellingen" dtitle="flacflac setup" dtext="Met dit scherm kan je deze flacflac server instellen. Je kan er je flacflac familie mee onderhouden, de plek waar je je liedjes bewaard, de flacflac database en webserver mee instellen. Kijk op de flacflac homepage voor meer informatie."/>
+		<btn name="btn_menu_touch" iconname="btn_console_touchscreen.jpg" label="flacflac touchscreen" dtitle="" dtext=""/>
+		<btn name="btn_menu_media" iconname="btn_webserver.jpg" label="flacflac control" dtitle="" dtext="testing control"/>
+		<btn name="btn_menu_folders" iconname="btn_folders.jpg" label="setup folders" dtitle="" dtext=""/>
+		<btn name="btn_menu_exit" iconname="btn_exit.jpg" label="flacflac afsluiten" dtitle="flacflac afsluiten ?" dtext="Weet je zeker dat je flacflac wilt afsluiten ? Hierdoor is jouw verzameling niet meer bereikbaar voor je vrienden en kan ook jouw verzameling niet meer worden bijgewerkt met liedjes van je vrienden ?"/>
+		<btn name="btn_about" iconname="btn_about.jpg" label="over flacflac" dtitle="Over flacflac" dtext="flacflac koppelt jouw muziek aan die van je familie op een simpele en leuke manier. flacflac is een nederlands opensource product. Raadpleeg voor meer informatie over flacflac en de gebruikers overeenkomst de bijsluiter op deze server."/>
+		<btn name="btn_cancel" iconname="btn_cancel.jpg" label="cancel" dtitle="" dtext=""/>
+		<btn name="btn_info" iconname="btn_info.jpg" label="afspeel lijsten" dtitle="" dtext=""/>
+		<btn name="btn_red" iconname="btn_red.jpg" label="accepteer" dtitle="" dtext=""/>
+		<btn name="btn_green" iconname="btn_green.jpg" label="annuleer" dtitle="" dtext=""/>
+		<btn name="btn_menu_database" iconname="btn_database.jpg" label="database menu" dtitle="flacflac database setup" dtext="flacflac gebruikt een database voor het opslaan van artiest, album en liedjes gegevens. Het makkelijkste is om de ingebouwde database te gebruiken. Eventuuel kan flacflac ook gebruikmaken van een externe SQL database. Druk op Reset Database om alle gegevens te wissen."/>
+		<btn name="btn_menu_webserver" iconname="btn_webserver.jpg" label="webserver menu" dtitle="Webserver" dtext="Geef de webserver details in"/>
+		<btn name="btn_menu_family" iconname="btn_family.jpg" label="familie flacflac" dtitle="Familie Scan" dtext="Druk op de rode knop om flacflac kontakt te laten maken met de andere flacflac servers binnen jouw familie en daarmee een volledig overzicht te krijgen van alle beschikbare liedjes."/>
+		<btn name="btn_terminate" iconname="btn_terminate.jpg" label="flacflac afsluiten" dtitle="flacflac afsluiten" dtext="Bezig met afsluiten..."/>
+		<btn name="btn_doublecheck_loose" iconname="btn_doublecheck_loose.jpg" label="losjes import" dtitle="" dtext="flacflac voegt ook liedjes toe die een beetje op bestaande liedjes lijken"/>
+		<btn name="btn_doublecheck_normal" iconname="btn_doublecheck_normal.jpg" label="normale import" dtitle="" dtext="flacflac voegt ook liedjes toe die op bestaande liedjes lijken"/>
+		<btn name="btn_doublecheck_hard" iconname="btn_doublecheck_hard.jpg" label="strenge import" dtitle="" dtext="flacflac voegt alleen nieuwe liedjes toe"/>
+		<btn name="btn_doubles_preserve" iconname="btn_recycledoubles.jpg" label="behoud dubbelen" dtitle="" dtext="Dubbels liedjes worden behouden"/>
+		<btn name="btn_doubles_delete" iconname="btn_deletedoubles.jpg" label="verwijder dubbelen" dtitle="" dtext="Dubbele liedjes worden uit de import folder verwijderd"/>
+		<btn name="btn_import_move" iconname="btn_moveimport.jpg" label="move import" dtitle="" dtext="Geimporteerde liedjes worden behouden"/>
+		<btn name="btn_import_copy" iconname="btn_copyimport.jpg" label="copy import" dtitle="" dtext="Geimporteerde liedjes worden uit de import folder verwijderd"/>
+		<btn name="btn_dbclear" iconname="btn_dbclear.jpg" label="reset database" dtitle="flacflac reset ?" dtext="Weet je zeker dat je de flacflac database wilt resetten ? Hierdoor worden alle liedjes, artiesten en albums uit jouw database verwijderd"/>
+		<btn name="btn_setfolder_media" iconname="btn_set_media_folder.jpg" label="media folder" dtitle="" dtext="Kies de folder waar flacflac alle liedjes opslaat. Druk op de rode knop om de wijzigingen vast te leggen."/>
+		<btn name="btn_setfolder_import" iconname="btn_set_import_folder.jpg" label="import folder" dtitle="" dtext="Kies de folder waaruit flacflac nieuwe liedjes ophaalt. Druk op de rode knop om de wijzigingen vast te leggen."/>
+		<btn name="btn_setfolder_trash" iconname="btn_set_trash_folder.jpg" label="prullebak folder" dtitle="" dtext="Kies de folder waar flacflac alle liedjes opslaat die geen of geen geldige MP3 ID3 tag hebben. Druk op de rode knop om de wijzigingen vast te leggen."/>
+		<btn name="btn_media_rescan" iconname="btn_folder_media.jpg" label="rescan media folder" dtitle="flacflac rescan ?" dtext="Klik op het rode knopje om jouw mediafolder opnieuw in te lezen"/>
+		<btn name="btn_media_changed" iconname="btn_folder_changed.jpg" label="scan changed" dtitle="flacflac changed rescan ?" dtext="Klik op het rode knopje om veranderde liedjes in jouw mediafolder opnieuw in te lezen"/>
+		<btn name="btn_media_import" iconname="btn_folder_import.jpg" label="scan import folder" dtitle="flacflac import ?" dtext="Klik op het rode knopje om jouw liedjes uit jouw importfolder toe te voegen aan jouw verzameling"/>
+		<btn name="btn_folder_trash" iconname="btn_folder_trash.jpg" label="afval folder" dtitle="" dtext=""/>
+		<btn name="btn_set_webport" iconname="btn_set_webport.jpg" label="Webserver Poort" dtitle="flacflac web poort" dtext="Druk op deze knop om de webserver in te stellen op een andere poort"/>
+		<btn name="btn_set_webroot" iconname="btn_set_webroot.jpg" label="Webroot folder (fixed - cannot be changed in this version)" dtitle="flacflac webfolder" dtext="Deze functie is niet beschikbaar in deze versie."/>
+		<btn name="btn_field_artist" iconname="btn_field_artist.jpg" label="Artiest naam" dtitle="" dtext="Deze functie is niet beschikbaar in deze versie."/>
+		<btn name="btn_field_album" iconname="btn_field_album.jpg" label="Album naam" dtitle="" dtext="Deze functie is niet beschikbaar in deze versie."/>
+		<btn name="btn_field_song" iconname="btn_field_song.jpg" label="Liedje naam" dtitle="" dtext="Deze functie is niet beschikbaar in deze versie."/>
+		<btn name="btn_menu_transcode" iconname="btn_mediaplayer.jpg" label="trans coding" dtitle="instelling voor flac en mobiel gebruik" dtext="instelling voor flac en mobiel gebruik."/>
+		<btn name="btn_grps_transcode_on" iconname="btn_grps_on.jpg" label="transcode grps/3g on" dtitle="kwaliteit van de transcode" dtext="Kies voor wifi streaming de HQ en voor mobiele GRPS of 3G streaming de LQ setting."/>
+		<btn name="btn_grps_transcode_off" iconname="btn_grps_off.jpg" label="transcode grps/3g uit" dtitle="kwaliteit van de transcode" dtext="Kies voor wifi streaming de HQ en voor mobiele GRPS of 3G streaming de LQ setting."/>
+		<btn name="btn_auto_transcode_on" iconname="btn_transcode_on.jpg" label="transcode auto aan" dtitle="automatisch transcoderen" dtext="Nieuwe FLAC liedjes worden automatisch geschikt gemaakt voor streaming."/>
+		<btn name="btn_auto_transcode_off" iconname="btn_transcode_off.jpg" label="transcode auto uit" dtitle="automatisch transcoderen" dtext="Nieuwe FLAC liedjes kunnen niet via streaming worden afgespeeld."/>
+	</buttoninfo></xml>

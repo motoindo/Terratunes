@@ -1,0 +1,158 @@
+{
+	"projectId": "C85AFACD-11F3-4776-81DC-2689AB606607",
+	"settings": {
+		"urlPrefix": "http://localhost/",
+		"directAPI": "",
+		"spacesToIndent": "4",
+		"codeGenFormat": "Class",
+		"extPath": "http://extjs.cachefly.net/ext-3.2.0/",
+		"exportPath": "."
+	},
+	"xdsVersion": "xds-1.0.0.9",
+	"components": [
+		{
+			"cid": "container",
+			"jsClass": "MyContainer",
+			"userConfig": {
+				"width": 956,
+				"height": 600,
+				"layout": "fit"
+			},
+			"cn": [
+				{
+					"cid": "fieldset",
+					"jsClass": "MyFieldSet",
+					"cn": [
+						{
+							"cid": "button",
+							"jsClass": "MyButton"
+						},
+						{
+							"cid": "label",
+							"jsClass": "MyLabel"
+						},
+						{
+							"cid": "slider",
+							"jsClass": "MySlider",
+							"userConfig": {
+								"value": 52
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"cid": "window",
+			"jsClass": "MyWindow",
+			"userConfig": {
+				"width": 966,
+				"height": 882,
+				"layout": "auto"
+			},
+			"cn": [
+				{
+					"cid": "tabpanel",
+					"jsClass": "MyTabs",
+					"userConfig": {
+						"activeTab": 2
+					},
+					"cn": [
+						{
+							"cid": "panel",
+							"jsClass": "MyPanel",
+							"userConfig": {
+								"title": "Tab 1"
+							}
+						},
+						{
+							"cid": "panel",
+							"jsClass": "MyPanel1",
+							"userConfig": {
+								"title": "Tab 2"
+							}
+						},
+						{
+							"cid": "panel",
+							"jsClass": "MyPanel2",
+							"userConfig": {
+								"title": "Tab 3",
+								"tpl": "",
+								"layout": "accordion"
+							}
+						}
+					]
+				},
+				{
+					"cid": "container",
+					"jsClass": "MyContainer1"
+				},
+				{
+					"cid": "fieldset",
+					"jsClass": "MyFieldSet1",
+					"userConfig": {
+						"width": 80
+					}
+				},
+				{
+					"cid": "fieldset",
+					"jsClass": "MyFieldSet2",
+					"userConfig": {
+						"title": "tekkels 1"
+					},
+					"cn": [
+						{
+							"cid": "progressbar",
+							"jsClass": "MyProgressBar"
+						}
+					]
+				},
+				{
+					"cid": "toolbar",
+					"jsClass": "MyToolbar",
+					"dock": "tbar",
+					"cn": [
+						{
+							"cid": "buttongroup",
+							"jsClass": "MyButtonGroup",
+							"cn": [
+								{
+									"cid": "button",
+									"jsClass": "MyButton1",
+									"userConfig": {
+										"text": "Button 1"
+									}
+								},
+								{
+									"cid": "button",
+									"jsClass": "MyButton2",
+									"userConfig": {
+										"text": "Button 2"
+									},
+									"cn": [
+										{
+											"cid": "menu",
+											"jsClass": "MyMenu",
+											"dock": "menu"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"cid": "pagingtoolbar",
+					"jsClass": "MyPagingToolbar",
+					"dock": "bbar"
+				}
+			]
+		}
+	],
+	"stores": [
+		{
+			"cid": "xmlstore",
+			"jsClass": "MyStore"
+		}
+	]
+}

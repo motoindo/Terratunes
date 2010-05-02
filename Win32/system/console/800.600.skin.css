@@ -1,0 +1,151 @@
+
+	BODY									{top:0px;left:0px;margin:0px;font-family: Arial;}
+		#dvMenuHome								{position:absolute;width:800px;height:600px;left:0px;top:0px;}
+			.clsMenuMainNormal					{background:#000 url(/skinimg/console/bg_body.jpg);}
+			.clsMenuMainLogo					{background:#000 url(/skinimg/console/bg_bodylogo.jpg);}
+								#dvHomeButton	{
+										position:relative;
+										float:left;
+										width:84px;
+										height:598px;
+										margin-left:68px;
+										top:0px;
+										}									
+								#dvTitleBar		{
+										position:relative;
+										float:left;
+										overflow:hidden;
+										line-height:20px;
+										height:20px;
+										width:480px;
+										margin-top:132px;
+										color:#fff;
+										font-size:8pt;
+										font-weight:bold;
+										padding-left:10px;
+										}	
+								#dvBoxHeader	{
+										position:relative;
+										float:left;
+										line-height:20px;
+										font-size:20pt;
+										color:#fff;
+										padding:10px;
+										text-align:center;
+										height:40px;
+			}
+			.clsMenuMainNormal	#dvBoxHeader	{
+										width:480px;
+										}
+			.clsMenuMainLogo 	#dvBoxHeader	{
+										margin-left:200px;
+										width:280px;
+										}
+								#dvBoxMessage	{
+										position:relative;
+										float:left;
+										height:160px;
+										color:#fff;
+										padding:10px;
+										text-align:center;
+										}
+			.clsMenuMainNormal	#dvBoxMessage	{
+										width:480px;
+										}
+			.clsMenuMainLogo 	#dvBoxMessage	{
+									margin-left:200px;
+									width:280px;
+									}
+								#dvButtonBar	{
+										position:relative;
+										float:left;
+										height:100px;
+										overflow:hidden;
+										}
+			.clsMenuMainNormal	#dvButtonBar	{
+										width:480px;
+										}
+			.clsMenuMainLogo 	#dvButtonBar	{
+										margin-left:200px;
+										width:280px;
+										height:100px;
+										overflow:hidden;
+										}
+								#dvButtonBar div	{
+										float:right;
+										width:60px;
+										height:80px;
+										margin:10px;
+										padding-top:60px;
+										color:#fff;
+										font-size:8pt;
+										text-align:center;
+										}		
+			.clsButton_search					{background:url(/skinimg/console/btn_admin.jpg) no-repeat top center;}
+			.clsButton_coverflow				{background:url(/skinimg/console/btn_doublecheck_loose.jpg) no-repeat top center;}
+			.clsButton_mediaplayer				{background:url(/skinimg/console/btn_mediaplayer.jpg) no-repeat top center;}
+			.clsButton_terminate				{background:url(/skinimg/console/btn_terminate.jpg) no-repeat top center;}
+			.clsButton_hidden					{display:none}
+		#dvMenuSearch							{position:absolute;width:800px;height:600px;left:0px;top:0px;overflow:hidden;background-color:yellow;}
+			#dvSideBar							{float:left;width:60px;height:600px;float:left;top:3px;margin:0px;padding:0px;overflow:hidden;background-color:red;}
+				#dvLogo							{width:60px;height:60px;background:url(skinimg/console/flacflac.logo.60.60.jpg) no-repeat}
+				#dvVolTouchLayer				{z-index:2;width:60px;height:540px;background-color:#666;}
+				#dvVolumeScroller				{z-index:1;position:absolute;top:100px;width:60px;height:60px;background:url(skinimg/console/volume_scroller.jpg);font-size:8pt;text-align:center;z-index:1;padding-top:10px;color:#fff}
+			#dvHeaderMenu						{float:left;width:738px;height:60px;background-color:#eee;margin:2px 0 0 2px}
+				#dvHeaderMenu DIV				{float:left;width:182px;height:60px;background-color:#555;margin-right:2px}
+			#dvMessage							{float:left;width:736px;height:20px;background-color:#ddd;margin:2px 0 0 2px}
+			#dvResult							{float:left;width:736px;height:460px;background-color:#333;margin:2px 0 0 2px}
+			#dvFooterMenu						{float:left;width:738px;height:60px;background-color:#eee;margin:2px 0 0 2px;align:center}
+				#dvFooterMenu DIV				{float:left;width:145px;height:60px;background-color:#555;margin-right:2px}
+
+
+			/*	Since IE fails on multiple classes we have to go through the annoying setup of a class for each state an item can be in*/
+			/* PLAYLISTS */
+			.cls_type_playlist					{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarPlaylists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_playlist_selected			{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarPlaylists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_playlist_current			{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarPlaylists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			/* ARTIST ENTRIES */
+			.cls_type_artist					{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarArtists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_artist_selected			{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarArtists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_artist_current			{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarArtists_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			/* ALBUM ENTRIES */
+			.cls_type_album						{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarAlbums_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_album_selected			{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarAlbums_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			.cls_type_album_current				{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarAlbums_Sel.png) no-repeat 6px 6px;filter:alpha(opacity=80)}
+			/* SONG ENTRIES */
+			.cls_type_song						{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+			.cls_type_song_selected				{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+			.cls_type_song_current				{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+			/* DATE ENTRIES */
+			.cls_type_date						{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/iphone-item-year.png) no-repeat 8px 50%;filter:alpha(opacity=80)}
+			.cls_type_date_selected				{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/iphone-item-year.png) no-repeat 8px 50%;filter:alpha(opacity=80)}
+			.cls_type_date_current				{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/iphone-item-year.png) no-repeat 8px 50%;filter:alpha(opacity=80)}
+			/* YEAR ENTRIES */
+			.cls_type_year						{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/iphone-item-year.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			.cls_type_year_selected				{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/iphone-item-year.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			.cls_type_year_current				{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/iphone-item-year.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			/* GENRE ENTRIES */
+			.cls_type_genre						{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarGenres_Sel.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			.cls_type_genre_selected			{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarGenres_Sel.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			.cls_type_genre_current				{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarGenres_Sel.png) no-repeat 12px 12px;filter:alpha(opacity=80)}
+			/* SONG ENTRIES */
+			.cls_type_playlist_song				{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+			.cls_type_playlist_song_selected	{color:#ccc;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#555 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+			.cls_type_playlist_song_current		{color:#eee;float:left;width:353px;height:84px;margin:2px;font-size:10pt;background:#A00 url(skinimg/iphone/BarSongs_Sel.png) no-repeat 12px 6px;filter:alpha(opacity=80)}
+
+			.cls_entry_title					{float:left;margin: 10px 0 0 50px;overflow:hidden;width:300px;height:20px;line-height:20px;font-size:14pt}
+			.cls_entry_artist					{float:left;margin: 4px 0 0 16px;overflow:hidden;width:300px;height:16px}
+			.cls_entry_artist_albumcount		{float:left;margin: 4px  0 0 50px;height:12px}
+			.cls_entry_artist_songcount			{float:left;margin: 4px  0 0 10px;height:12px}
+			.cls_entry_album					{float:left;margin: 10px 0 0 50px;overflow:hidden;width:300px;height:20px;line-height:20px;font-size:14pt}
+			.cls_entry_album_songcount			{margin: 4px  0 0 50px;height:12px}
+			.cls_entry_album_artistname			{margin: 4px  0 0 50px;height:12px}
+			.cls_entry_details					{float:left;margin: 4px 0 0 50px}
+			.cls_entry_year						{float:left;margin: 8px 0 0 6px;width:26px;text-align:center}
+			.cls_entry_genre					{float:left;margin: 4px 0 0 6px;height:16px}
+			.cls_entry_duration					{float:left;margin: 4px 0 0 6px;height:16px}
+			.cls_entry_date_year				{float:left;margin: 10px 0 0 40px;width:80px}
+			.cls_entry_date_month				{float:left;margin: 10px 0 0 0;width:100px}
+			.cls_entry_date_day					{float:left;margin: 10px 0 0 0;width:100px}
+		#dvMenuCoverflow						{position:absolute;width:800px;height:600px;left:0px;top:0px;}
+

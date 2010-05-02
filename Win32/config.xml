@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?><xml>
+	<dtstartup></dtstartup>
+	<dbcnstr>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db\mediaset.mdb;Persist Security Info=False</dbcnstr>
+	<dtlastupd>1%2F11%2F2010 10%3A39%3A27 AM</dtlastupd>
+	<shutdown>0</shutdown>
+	<showcursor>1</showcursor>
+	<soundcard>0</soundcard>
+	<threads>0</threads>
+	<streamblock>32</streamblock> 
+	<server name="EEEBlack" details="asus eee server" lanip="" lanport="80" wanip="87.210.76.35" wanport="1111" wanstreamport="1111" familyport="7654" pagerecs="48" announce="1"/>
+	<interfaces>
+		<screen name="console" enabled="0" width="800" height="480" startx="0" starty="0"/>
+		<screen name="player" enabled="0" width="800" height="480" startx="0" starty="480"/>
+		<screen name="iphone" enabled="1" manifest="0" version="0"/>
+	</interfaces>
+	<mediastorage refresh="90">
+		<loc name="mp3" store_mp3="1">m:\mp3</loc>
+		<loc name="grps" store_grps="1">m:\grps</loc>
+		<loc name="flac" store_flac="1">m:\flac</loc>
+	</mediastorage> 
+</xml>
